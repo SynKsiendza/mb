@@ -218,6 +218,7 @@ ul:hover .dropdown-content {
     width: 95%;
     padding: 15px;
     background-color: rgba(139, 139, 139, 0.8);
+    cursor: pointer;
 }
 .item-img
 {
