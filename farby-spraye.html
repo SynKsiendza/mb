@@ -17,13 +17,14 @@
 </head>
 <body>
     <div class="header">
-        <a href="index.html"><img class="logo" src="img/mb_logo.png" alt="logo" width="110"></a>
+        <a href="index.html"><img class="logo" src="img/logo.png" alt="logo" width="110"></a>
         <ul style="float: left;">
             <li class="dropdown">
                 <div class="dropbtn">Farby i artykuły<br> malarskie</div>
                 <div class="dropdown-content">
                   <a href="art-mal.html">Artykuły malarskie</a>
-                  <a href="farby-scienne.html">Farby Ścienne</a>
+                  <a href="farby-scienne-biale.html">Farby Ścienne - Białe</a>
+                  <a href="farby-scienne-kolor.html">Farby Ścienne - Kolorowe</a>
                   <a href="podklady.html">Podkłady</a>
                   <a href="farby-akrylowe.html">Farby Akrylowe</a>
                   <a href="farby-spraye.html">Spraye</a>
@@ -86,16 +87,16 @@
 
     </div>
     <div class="main-box">
-        <!-- Śnieżka Plamoodporna -->
-        <div class="item-box" onclick="plamoodporna()">
-            <img class="item-img" src="./img/Sniezka_plamoodporna.png" width="200" height="250">
-            <div class="item-title">Śnieżka Plamoodporna <span style="float: right; font-size: 70%;">Więcej Informacji</span></div><hr color="#c4c4c4" width="80%">
-            <div class="item-desc" id="plamoodporna-desc">
-                Dostępne opakowania: 2,5L; 5L<br>
-                Wydajność: do 15 m<sup>2</sup>/L przy jednokrotnym malowaniu
+        <!-- DECOCOLOR Spray -->
+        <div class="item-box" onclick="DCspray()">
+            <img class="item-img-2" src="./img/decocolor2.png" width="150" height="300">
+            <div class="item-title">DECOCOLOR Spray kolorowy<span style="float: right; font-size: 70%;">Więcej Informacji</span></div><hr color="#c4c4c4" width="80%">
+            <div class="item-desc" id="DCspray-desc">
+                Dostępne opakowania: 400ml<br>
+                Wydajność: do 2 m<sup>2</sup>/L przy jednokrotnym malowaniu
             </div>
-            <div id="moreinfo-plamoodporna"></div>
-            <div id="dist-plamoodporna"></div>
+            <div id="moreinfo-DCspray"></div>
+            <div id="dist-DCspray"></div>
             <div class="check-price">
                 Zapytaj o cenę lub dostępność:
                 <br>000 000 000
@@ -103,67 +104,16 @@
         </div>
         <!-- END OF ITEM -->
 
-        <!-- Śnieżka Barwy Natury -->
-        <div class="item-box" onclick="bn()">
-            <img class="item-img" src="./img/Sniezka_barwynatury.png" width="240" height="250">
-            <div class="item-title">Śnieżka Barwy Natury<span style="float: right; font-size: 70%;">Więcej Informacji</span></div><hr color="#c4c4c4" width="80%">
-            <div class="item-desc" id="bn-desc">
-                Dostępne opakowania: 2,5L; 5L<br>
-                Wydajność: do 14 m<sup>2</sup>/L przy jednokrotnym malowaniu
+        <!-- marker geodezyjny -->
+        <div class="item-box" onclick="markerGeo()">
+            <img class="item-img-2" src="./img/geodezyjny.png" width="150" height="300">
+            <div class="item-title">DECOCOLOR Spray kolorowy<span style="float: right; font-size: 70%;">Więcej Informacji</span></div><hr color="#c4c4c4" width="80%">
+            <div class="item-desc" id="markerGeo-desc">
+                Dostępne opakowania: 0,5L<br>
+                Wydajność: do 2,5 m<sup>2</sup>/L przy jednokrotnym malowaniu
             </div>
-            <div id="moreinfo-bn"></div>
-            <div id="dist-bn"></div>
-            <div class="check-price">
-                Zapytaj o cenę lub dostępność:
-                <br>000 000 000
-            </div>
-        </div>
-        <!-- END OF ITEM -->
-
-        <!-- Śnieżka Eko -->
-        <div class="item-box" onclick="Eko()">
-            <img class="item-img" src="./img/Sniezka_eko.png" width="250" height="250">
-            <div class="item-title">Śnieżka Eko<span style="float: right; font-size: 70%;">Więcej Informacji</span></div><hr color="#c4c4c4" width="80%">
-            <div class="item-desc" id="Eko-desc">
-                Dostępne opakowania: 1L; 3L; 5L; 10L<br>
-                Wydajność: do 13 m<sup>2</sup>/L przy jednokrotnym malowaniu
-            </div>
-            <div id="moreinfo-Eko"></div>
-            <div id="dist-Eko"></div>
-            <div class="check-price">
-                Zapytaj o cenę lub dostępność:
-                <br>000 000 000
-            </div>
-        </div>
-        <!-- END OF ITEM -->
-
-        <!-- Śnieżka Eko Plus -->
-        <div class="item-box" onclick="EkoPlus()">
-            <img class="item-img" src="./img/Sniezka_eko_plus.png" width="250" height="250">
-            <div class="item-title">Śnieżka Eko Plus<span style="float: right; font-size: 70%;">Więcej Informacji</span></div><hr color="#c4c4c4" width="80%">
-            <div class="item-desc" id="EkoPlus-desc">
-                Dostępne opakowania: 1L; 3L; 5L; 10L<br>
-                Wydajność: do 14 m<sup>2</sup>/L przy jednokrotnym malowaniu
-            </div>
-            <div id="moreinfo-EkoPlus"></div>
-            <div id="dist-EkoPlus"></div>
-            <div class="check-price">
-                Zapytaj o cenę lub dostępność:
-                <br>000 000 000
-            </div>
-        </div>
-        <!-- END OF ITEM -->
-
-        <!-- Śnieżka Eko Plus -->
-        <div class="item-box" onclick="EasyCare()">
-            <img class="item-img" src="./img/dulux_easycare.png" width="250" height="250">
-            <div class="item-title">Dulux EasyCare<span style="float: right; font-size: 70%;">Więcej Informacji</span></div><hr color="#c4c4c4" width="80%">
-            <div class="item-desc" id="EasyCare-desc">
-                Dostępne opakowania: 2,5L; 5L<br>
-                Wydajność: do 16 m<sup>2</sup>/L przy jednokrotnym malowaniu
-            </div>
-            <div id="moreinfo-EasyCare"></div>
-            <div id="dist-EasyCare"></div>
+            <div id="moreinfo-markerGeo"></div>
+            <div id="dist-markerGeo"></div>
             <div class="check-price">
                 Zapytaj o cenę lub dostępność:
                 <br>000 000 000
