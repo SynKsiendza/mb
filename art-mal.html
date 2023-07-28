@@ -17,13 +17,14 @@
 </head>
 <body>
     <div class="header">
-        <a href="index.html"><img class="logo" src="img/mb_logo.png" alt="logo" width="110"></a>
+        <a href="index.html"><img class="logo" src="img/logo.png" alt="logo" width="110"></a>
         <ul style="float: left;">
             <li class="dropdown">
                 <div class="dropbtn">Farby i artykuły<br> malarskie</div>
                 <div class="dropdown-content">
                   <a href="art-mal.html">Artykuły malarskie</a>
-                  <a href="farby-scienne.html">Farby Ścienne</a>
+                  <a href="farby-scienne-biale.html">Farby Ścienne - Białe</a>
+                  <a href="farby-scienne-kolor.html">Farby Ścienne - Kolorowe</a>
                   <a href="podklady.html">Podkłady</a>
                   <a href="farby-akrylowe.html">Farby Akrylowe</a>
                   <a href="farby-spraye.html">Spraye</a>
@@ -86,6 +87,7 @@
 
     </div>
     <div class="main-box">
+        <!---->
         <div class="item-box" onclick="pendzel()">
             <img class="item-img" src="./img/pedzle.png" width="250" height="250">
             <div class="item-title">Pędzle<span style="float: right; font-size: 70%;"></span></div><hr color="#c4c4c4" width="80%">
@@ -93,12 +95,84 @@
                No Pendzel, czego nie rozumiesz?
             </div>
             <div id="moreinfo-pendzel"></div>
-            <div id="dist-pendzel"><br><br><br></div>
+            <div id="dist-pendzel"></div>
             <div class="check-price">
                 Zapytaj o cenę lub dostępność:
                 <br>000 000 000
             </div>
         </div>
+            <!---->
+            <!---->
+        <div class="item-box" onclick="walek()">
+            <img class="item-img" src="./img/walek.png" width="250" height="250">
+            <div class="item-title">Wałki<span style="float: right; font-size: 70%;"></span></div><hr color="#c4c4c4" width="80%">
+            <div class="item-desc" id="walek-desc">
+               No Wałki <s>finansowe</s>, czego nie rozumiesz?
+            </div>
+            <div id="moreinfo-walek"></div>
+            <div id="dist-walek"></div>
+            <div class="check-price">
+                Zapytaj o cenę lub dostępność:
+                <br>000 000 000
+            </div>
+        </div>
+        <!---->
+        <div class="item-box" onclick="kuweta()">
+            <img class="item-img" src="./img/kuweta.png" width="250" height="250">
+            <div class="item-title">Kuwety<span style="float: right; font-size: 70%;"></span></div><hr color="#c4c4c4" width="80%">
+            <div class="item-desc" id="kuweta-desc">
+               No kuweta dla kota całę te
+            </div>
+            <div id="moreinfo-kuweta"></div>
+            <div id="dist-kuweta"></div>
+            <div class="check-price">
+                Zapytaj o cenę lub dostępność:
+                <br>000 000 000
+            </div>
+        </div>
+        <!---->
+        <div class="item-box" onclick="Wiadro()">
+            <img class="item-img" src="./img/wiadro.png" width="250" height="250">
+            <div class="item-title">Wiadra<span style="float: right; font-size: 70%;"></span></div><hr color="#c4c4c4" width="80%">
+            <div class="item-desc" id="wiadro-desc">
+                Co dwie miski, to nie wiadro
+            </div>
+            <div id="moreinfo-wiadro"></div>
+            <div id="dist-wiadro"></div>
+            <div class="check-price">
+                Zapytaj o cenę lub dostępność:
+                <br>000 000 000
+            </div>
+        </div>
+        <!---->
+        <div class="item-box" onclick="folia()">
+            <img class="item-img" src="./img/folia-malarska.png" width="250" height="250">
+            <div class="item-title">Folie malarskie<span style="float: right; font-size: 70%;"></span></div><hr color="#c4c4c4" width="80%">
+            <div class="item-desc" id="kuweta-folia">
+               Szczepionki z tlenkiem grafenu to spisek Steava Jobsa, a rząd światowy nas morduje za pomocą 5G, i dalej słuchajcie Tuska to będziecie po niemiecku mówić
+            </div>
+            <div id="moreinfo-folia"></div>
+            <div id="dist-folia"></div>
+            <div class="check-price">
+                Zapytaj o cenę lub dostępność:
+                <br>000 000 000
+            </div>
+        </div>
+        <!---->
+        <div class="item-box" onclick="tasma()">
+            <img class="item-img" src="./img/tasma.png" width="250" height="250">
+            <div class="item-title">Taśmy malarskie<span style="float: right; font-size: 70%;"></span></div><hr color="#c4c4c4" width="80%">
+            <div class="item-desc" id="tasma-desc">
+                Chyba ci się <s>odkleiło</s> odkleiła taśma
+            </div>
+            <div id="moreinfo-tasma"></div>
+            <div id="dist-tasma"></div>
+            <div class="check-price">
+                Zapytaj o cenę lub dostępność:
+                <br>000 000 000
+            </div>
+        </div>
+        
     </div>
     <div class="footer">P.H.U. MIXBUD &copy; 2023</div>
 </body>
