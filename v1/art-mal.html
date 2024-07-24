@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P.H.U. Mixbud - Strona główna</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&amp;family=Lato&amp;display=swap" rel="stylesheet">
+    <script src="js/jquery-3.6.4.min.js"></script><style type="text/css" id="operaUserStyle"></style>
+    <script src="js/jquery-ui-1.13.2/jquery-ui.js"></script>
+    <script src="js/jquery-ui-1.13.2/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="js/jquery-ui-1.13.2/jquery-ui.css">
+    <!-- SCRIPTS -->
+    <script src="js/more-info-farby.js"></script>
+</head>
+<body>
+    <div class="header">
+        <a href="index.html"><img class="logo" src="img/logo.png" alt="logo" width="110"></a>
+        <ul style="float: left;">
+            <li class="dropdown">
+                <div class="dropbtn">Farby i artykuły<br> malarskie</div>
+                <div class="dropdown-content">
+                  <a href="art-mal.html">Artykuły malarskie</a>
+                  <a href="farby-scienne-biale.html">Farby Ścienne - Białe</a>
+                  <a href="farby-scienne-kolor.html">Farby Ścienne - Kolorowe</a>
+                  <a href="podklady.html">Podkłady</a>
+                  <a href="farby-akrylowe.html">Farby Akrylowe</a>
+                  <a href="farby-spraye.html">Spraye</a>
+                  <a href="grunty.html">Grunty</a>
+                  <a href="impregnaty.html">Impregnaty, lakiery</a>
+                </div>
+            </li>
+        </ul>
+        <ul style="float: left;">
+            <li class="dropdown">
+                <div class="dropbtn">Silikony, kleje, <br>piany montażowe</div>
+                <div class="dropdown-content">
+                  <a href="sylikony-i-kleje.html">Sylikony i kleje</a>
+                  <a href="piany-montazowe.html">Piany montażowe</a>
+                </div>
+            </li>
+        </ul>
+        <ul style="float: left;">
+            <li class="dropdown">
+                <div class="dropbtn">Artykuły Metalowe<br> i narzędzia</div>
+                <div class="dropdown-content">
+                  <a href="wkrety.html">Wkręty</a>
+                  <a href="kolki.html">Kołki</a>
+                  <a href="sruby.html">Śruby</a>
+                  <a href="metalowe-inne.html">Inne</a>
+                </div>
+            </li>
+        </ul>
+        <ul style="float: left;">
+            <li class="dropdown">
+                <div class="dropbtn">Zaprawy, kleje, <br>i inne</div>
+                <div class="dropdown-content">
+                  <a href="zaprawy.html">Zaprawy</a>
+                  <a href="gladzie.html">Gładzie</a>
+                  <a href="Kleje.html">Kleje</a>
+                  <a href="cement.html">Cement</a>
+                  <a href="wapno.html">Wapno</a>
+                  <a href="gips.html">Gips</a>
+                </div>
+            </li>
+        </ul>
+        <ul style="float: left;">
+            <li class="dropdown">
+                <div class="dropbtn">Tarcze oraz<br>wiertła</div>
+                <div class="dropdown-content">
+                  <a href="tarcze.html">Tarcze</a>
+                  <a href="wiertla.html">Wiertła</a>
+                </div>
+            </li>
+        </ul>
+        <ul style="float: left;">
+            <li class="dropdown">
+                <div class="dropbtn">Akcesoria oraz<br> zabudowa GK</div>
+                <div class="dropdown-content">
+                  <a href="akcesoria.html">Akcesoria</a>
+                  <a href="zabudowa-gk.html">Zabudowa GK</a>
+                </div>
+            </li>
+        </ul>
+
+    </div>
+    <div class="main-box">
+        <!---->
+        <div class="item-box" onclick="pendzel()">
+            <img class="item-img" src="./img/pedzle.png" width="250" height="250">
+            <div class="item-title">Pędzle<span style="float: right; font-size: 70%;"></span></div><hr color="#c4c4c4" width="80%">
+            <div class="item-desc" id="pendzel-desc">
+               No Pendzel, czego nie rozumiesz?
+            </div>
+            <div id="moreinfo-pendzel"></div>
+            <div id="dist-pendzel"></div>
+            <div class="check-price">
+                Zapytaj o cenę lub dostępność:
+                <br>000 000 000
+            </div>
+        </div>
+            <!---->
+            <!---->
+        <div class="item-box" onclick="walek()">
+            <img class="item-img" src="./img/walek.png" width="250" height="250">
+            <div class="item-title">Wałki<span style="float: right; font-size: 70%;"></span></div><hr color="#c4c4c4" width="80%">
+            <div class="item-desc" id="walek-desc">
+               No Wałki <s>finansowe</s>, czego nie rozumiesz?
+            </div>
+            <div id="moreinfo-walek"></div>
+            <div id="dist-walek"></div>
+            <div class="check-price">
+                Zapytaj o cenę lub dostępność:
+                <br>000 000 000
+            </div>
+        </div>
+        <!---->
+        <div class="item-box" onclick="kuweta()">
+            <img class="item-img" src="./img/kuweta.png" width="250" height="250">
+            <div class="item-title">Kuwety<span style="float: right; font-size: 70%;"></span></div><hr color="#c4c4c4" width="80%">
+            <div class="item-desc" id="kuweta-desc">
+               No kuweta dla kota całę te
+            </div>
+            <div id="moreinfo-kuweta"></div>
+            <div id="dist-kuweta"></div>
+            <div class="check-price">
+                Zapytaj o cenę lub dostępność:
+                <br>000 000 000
+            </div>
+        </div>
+        <!---->
+        <div class="item-box" onclick="Wiadro()">
+            <img class="item-img" src="./img/wiadro.png" width="250" height="250">
+            <div class="item-title">Wiadra<span style="float: right; font-size: 70%;"></span></div><hr color="#c4c4c4" width="80%">
+            <div class="item-desc" id="wiadro-desc">
+                Co dwie miski, to nie wiadro
+            </div>
+            <div id="moreinfo-wiadro"></div>
+            <div id="dist-wiadro"></div>
+            <div class="check-price">
+                Zapytaj o cenę lub dostępność:
+                <br>000 000 000
+            </div>
+        </div>
+        <!---->
+        <div class="item-box" onclick="folia()">
+            <img class="item-img" src="./img/folia-malarska.png" width="250" height="250">
+            <div class="item-title">Folie malarskie<span style="float: right; font-size: 70%;"></span></div><hr color="#c4c4c4" width="80%">
+            <div class="item-desc" id="kuweta-folia">
+               Szczepionki z tlenkiem grafenu to spisek Steava Jobsa, a rząd światowy nas morduje za pomocą 5G, i dalej słuchajcie Tuska to będziecie po niemiecku mówić
+            </div>
+            <div id="moreinfo-folia"></div>
+            <div id="dist-folia"></div>
+            <div class="check-price">
+                Zapytaj o cenę lub dostępność:
+                <br>000 000 000
+            </div>
+        </div>
+        <!---->
+        <div class="item-box" onclick="tasma()">
+            <img class="item-img" src="./img/tasma.png" width="250" height="250">
+            <div class="item-title">Taśmy malarskie<span style="float: right; font-size: 70%;"></span></div><hr color="#c4c4c4" width="80%">
+            <div class="item-desc" id="tasma-desc">
+                Chyba ci się <s>odkleiło</s> odkleiła taśma
+            </div>
+            <div id="moreinfo-tasma"></div>
+            <div id="dist-tasma"></div>
+            <div class="check-price">
+                Zapytaj o cenę lub dostępność:
+                <br>000 000 000
+            </div>
+        </div>
+        
+    </div>
+    <div class="footer">P.H.U. MIXBUD &copy; 2023</div>
+</body>
+</html>

@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P.H.U. Mixbud - Strona główna</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&amp;family=Lato&amp;display=swap" rel="stylesheet">
+    <script src="js/jquery-3.6.4.min.js"></script><style type="text/css" id="operaUserStyle"></style>
+    <script src="js/jquery-ui-1.13.2/jquery-ui.js"></script>
+    <script src="js/jquery-ui-1.13.2/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="js/jquery-ui-1.13.2/jquery-ui.css">
+    <!-- SCRIPTS -->
+    <script src="js/more-info-farby.js"></script>
+</head>
+<body>
+    <div class="header">
+        <a href="index.html"><img class="logo" src="img/logo.png" alt="logo" width="110"></a>
+        <ul style="float: left;">
+            <li class="dropdown">
+                <div class="dropbtn">Farby i artykuły<br> malarskie</div>
+                <div class="dropdown-content">
+                  <a href="art-mal.html">Artykuły malarskie</a>
+                  <a href="farby-scienne-biale.html">Farby Ścienne - Białe</a>
+                  <a href="farby-scienne-kolor.html">Farby Ścienne - Kolorowe</a>
+                  <a href="podklady.html">Podkłady</a>
+                  <a href="farby-akrylowe.html">Farby Akrylowe</a>
+                  <a href="farby-spraye.html">Spraye</a>
+                  <a href="grunty.html">Grunty</a>
+                  <a href="impregnaty.html">Impregnaty, lakiery</a>
+                </div>
+            </li>
+        </ul>
+        <ul style="float: left;">
+            <li class="dropdown">
+                <div class="dropbtn">Silikony, kleje, <br>piany montażowe</div>
+                <div class="dropdown-content">
+                  <a href="sylikony-i-kleje.html">Sylikony i kleje</a>
+                  <a href="piany-montazowe.html">Piany montażowe</a>
+                </div>
+            </li>
+        </ul>
+        <ul style="float: left;">
+            <li class="dropdown">
+                <div class="dropbtn">Artykuły Metalowe<br> i narzędzia</div>
+                <div class="dropdown-content">
+                  <a href="wkrety.html">Wkręty</a>
+                  <a href="kolki.html">Kołki</a>
+                  <a href="sruby.html">Śruby</a>
+                  <a href="metalowe-inne.html">Inne</a>
+                </div>
+            </li>
+        </ul>
+        <ul style="float: left;">
+            <li class="dropdown">
+                <div class="dropbtn">Zaprawy, kleje, <br>i inne</div>
+                <div class="dropdown-content">
+                  <a href="zaprawy.html">Zaprawy</a>
+                  <a href="gladzie.html">Gładzie</a>
+                  <a href="Kleje.html">Kleje</a>
+                  <a href="cement.html">Cement</a>
+                  <a href="wapno.html">Wapno</a>
+                  <a href="gips.html">Gips</a>
+                </div>
+            </li>
+        </ul>
+        <ul style="float: left;">
+            <li class="dropdown">
+                <div class="dropbtn">Tarcze oraz<br>wiertła</div>
+                <div class="dropdown-content">
+                  <a href="tarcze.html">Tarcze</a>
+                  <a href="wiertla.html">Wiertła</a>
+                </div>
+            </li>
+        </ul>
+        <ul style="float: left;">
+            <li class="dropdown">
+                <div class="dropbtn">Akcesoria oraz<br> zabudowa GK</div>
+                <div class="dropdown-content">
+                  <a href="akcesoria.html">Akcesoria</a>
+                  <a href="zabudowa-gk.html">Zabudowa GK</a>
+                </div>
+            </li>
+        </ul>
+
+    </div>
+    <div class="main-box">
+        <!-- Śnieżka Eko -->
+        <div class="item-box" onclick="Eko()">
+            <img class="item-img" src="./img/Sniezka_eko.png" width="250" height="250">
+            <div class="item-title">Śnieżka Eko<span style="float: right; font-size: 70%;">Więcej Informacji</span></div><hr color="#c4c4c4" width="80%">
+            <div class="item-desc" id="Eko-desc">
+                Dostępne opakowania: 1L; 3L; 5L; 10L<br>
+                Wydajność: do 13 m<sup>2</sup>/L przy jednokrotnym malowaniu
+            </div>
+            <div id="moreinfo-Eko"></div>
+            <div id="dist-Eko"></div>
+            <div class="check-price">
+                Zapytaj o cenę lub dostępność:
+                <br>000 000 000
+            </div>
+        </div>
+        <!-- END OF ITEM -->
+
+        <!-- Śnieżka Eko Plus -->
+        <div class="item-box" onclick="EkoPlus()">
+            <img class="item-img" src="./img/Sniezka_eko_plus.png" width="250" height="250">
+            <div class="item-title">Śnieżka Eko Plus<span style="float: right; font-size: 70%;">Więcej Informacji</span></div><hr color="#c4c4c4" width="80%">
+            <div class="item-desc" id="EkoPlus-desc">
+                Dostępne opakowania: 1L; 3L; 5L; 10L<br>
+                Wydajność: do 14 m<sup>2</sup>/L przy jednokrotnym malowaniu
+            </div>
+            <div id="moreinfo-EkoPlus"></div>
+            <div id="dist-EkoPlus"></div>
+            <div class="check-price">
+                Zapytaj o cenę lub dostępność:
+                <br>000 000 000
+            </div>
+        </div>
+        <!-- END OF ITEM -->
+
+        <!-- Dulux Absolite White -->
+        <div class="item-box" onclick="absoluteWhite()">
+            <img class="item-img" src="./img/dulux_absolute_white.png" width="250" height="250">
+            <div class="item-title">Dulux Absolute White<span style="float: right; font-size: 70%;">Więcej Informacji</span></div><hr color="#c4c4c4" width="80%">
+            <div class="item-desc" id="absoluteWhite-desc">
+                Dostępne opakowania: 2,5L; 5L<br>
+                Wydajność: do 13 m<sup>2</sup>/L przy jednokrotnym malowaniu
+            </div>
+            <div id="moreinfo-absoluteWhite"></div>
+            <div id="dist-absoluteWhite"></div>
+            <div class="check-price">
+                Zapytaj o cenę lub dostępność:
+                <br>000 000 000
+            </div>
+        </div>
+        <!-- END OF ITEM -->
+        
+        <!-- Dekoral KL White -->
+        <div class="item-box" onclick="dekoralKL()">
+            <img class="item-img" src="./img/dekoral_klb.png" width="250" height="250">
+            <div class="item-title">Dekoral Kuchnia & Łazienka Śnieżnobiała<span style="float: right; font-size: 70%;">Więcej Informacji</span></div><hr color="#c4c4c4" width="80%">
+            <div class="item-desc" id="dekoralKL-desc">
+                Dostępne opakowania: 1L; 3L; 5L; 10L<br>
+                Wydajność: do 12 m<sup>2</sup>/L przy jednokrotnym malowaniu
+            </div>
+            <div id="moreinfo-dekoralKL"></div>
+            <div id="dist-dekoralKL"></div>
+            <div class="check-price">
+                Zapytaj o cenę lub dostępność:
+                <br>000 000 000
+            </div>
+        </div>
+        <!-- END OF ITEM -->
+
+        <!-- Dekoral Akrylit W -->
+        <div class="item-box" onclick="akrylitW()">
+            <img class="item-img" src="./img/dekoral_akrylitw.png" width="250" height="250">
+            <div class="item-title">Dekoral Akrylit W<span style="float: right; font-size: 70%;">Więcej Informacji</span></div><hr color="#c4c4c4" width="80%">
+            <div class="item-desc" id="akrylitW-desc">
+                Dostępne opakowania: 1L; 3L; 5L; 10L<br>
+                Wydajność: do 14 m<sup>2</sup>/L przy jednokrotnym malowaniu
+            </div>
+            <div id="moreinfo-akrylitW"></div>
+            <div id="dist-akrylitW"></div>
+            <div class="check-price">
+                Zapytaj o cenę lub dostępność:
+                <br>000 000 000
+            </div>
+        </div>
+        <!-- END OF ITEM -->
+
+        <!-- Dekoral Polinak Plus -->
+        <div class="item-box" onclick="polinakPlus()">
+            <img class="item-img" src="./img/dekoral_pp.png" width="250" height="250">
+            <div class="item-title">Dekoral Polinak Plus<span style="float: right; font-size: 70%;">Więcej Informacji</span></div><hr color="#c4c4c4" width="80%">
+            <div class="item-desc" id="polinakPlus-desc">
+                Dostępne opakowania: 1L; 3L; 5L; 10L<br>
+                Wydajność: do 16 m<sup>2</sup>/L przy jednokrotnym malowaniu
+            </div>
+            <div id="moreinfo-polinakPlus"></div>
+            <div id="dist-polinakPlus"></div>
+            <div class="check-price">
+                Zapytaj o cenę lub dostępność:
+                <br>000 000 000
+            </div>
+        </div>
+        <!-- END OF ITEM -->
+
+        <!-- Tikkurila AntiReflex -->
+        <div class="item-box" onclick="antiReflex()">
+            <img class="item-img" src="./img/tikkurila_antireflex.png" width="250" height="250">
+            <div class="item-title">Tikkurila Anti-Reflex<span style="float: right; font-size: 70%;">Więcej Informacji</span></div><hr color="#c4c4c4" width="80%">
+            <div class="item-desc" id="antiReflex-desc">
+                Dostępne opakowania: 3L; 10L<br>
+                Wydajność: do 15 m<sup>2</sup>/L przy jednokrotnym malowaniu
+            </div>
+            <div id="moreinfo-antiReflex"></div>
+            <div id="dist-antiReflex"></div>
+            <div class="check-price">
+                Zapytaj o cenę lub dostępność:
+                <br>000 000 000
+            </div>
+        </div>
+        <!-- END OF ITEM -->
+
+        <!-- Tikkurila Superwhite -->
+        <div class="item-box" onclick="superWhite()">
+            <img class="item-img" src="./img/tikkurila_superwhite.png" width="250" height="250">
+            <div class="item-title">Tikkurila Superwhite<span style="float: right; font-size: 70%;">Więcej Informacji</span></div><hr color="#c4c4c4" width="80%">
+            <div class="item-desc" id="superWhite-desc">
+                Dostępne opakowania: 10L<br>
+                Wydajność: do 12 m<sup>2</sup>/L przy jednokrotnym malowaniu
+            </div>
+            <div id="moreinfo-superWhite"></div>
+            <div id="dist-superWhite"></div>
+            <div class="check-price">
+                Zapytaj o cenę lub dostępność:
+                <br>000 000 000
+            </div>
+        </div>
+        <!-- END OF ITEM -->
+
+        <!-- Tikkurila Superwhite -->
+        <div class="item-box" onclick="designerWhite()">
+            <img class="item-img" src="./img/beckers_designerwhite.png" width="250" height="250">
+            <div class="item-title">Beckers Designer White<span style="float: right; font-size: 70%;">Więcej Informacji</span></div><hr color="#c4c4c4" width="80%">
+            <div class="item-desc" id="designerWhite-desc">
+                Dostępne opakowania: 2,5L; 5L; 10L<br>
+                Wydajność: do 14 m<sup>2</sup>/L przy jednokrotnym malowaniu
+            </div>
+            <div id="moreinfo-designerWhite"></div>
+            <div id="dist-designerWhite"></div>
+            <div class="check-price">
+                Zapytaj o cenę lub dostępność:
+                <br>000 000 000
+            </div>
+        </div>
+        <!-- END OF ITEM -->
+
+    </div>
+    <div class="footer">P.H.U. MIXBUD &copy; 2023</div>
+</body>
+</html>
